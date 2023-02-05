@@ -1,6 +1,8 @@
 <!-- list all todos in html -->
-<ul>
-  <li *ngFor="let todo of todos">
-    {{ todo.title }}
-  </li>
-</ul>
+<h1>Todo List</h1>
+
+<div class="card-container">
+  <div *ngFor="let todo of todos" class="card">
+    <div class="card-title">{{ todo.title }}</div>
+  </div>
+</div>
